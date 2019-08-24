@@ -1,0 +1,375 @@
+@import "_config.scss";
+
+.center {
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(50, 58, 68, 0.8);
+  z-index: 999;
+}
+
+.sticky+.content {
+  padding-top: 102px;
+}
+
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: rgba(72, 85, 100, 0.6);
+  transition: background 0.5s ease;
+  color: white;
+  height: 70px;
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    @include translateY(-50%);
+  }
+
+  nav,
+  nav ul,
+  nav ul li {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    @include translateY(-50%);
+
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    &.last {
+      margin: 0;
+    }
+
+    a {
+      font-size: 19px;
+      line-height: normal;
+      color: white;
+
+      &.hover {
+        color: slategrey;
+        border-bottom: 2px solid white;
+        @include transition(.4s ease-in-out);
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    height: 4rem;
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav a {
+      font-size: 15px;
+    }
+  }
+}
+
+
+.intro-page {
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.intro-page main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 3.25rem 1.5rem 1rem;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .intro-page main {
+    padding: 4.25rem 1.5rem 1rem;
+  }
+}
+
+.intro-page main .intro-wrapper {
+  -ms-flex: auto;
+  flex: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro-page main .intro-wrapper>.intro-name {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 4rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 425px) {
+  .intro-page main .intro-wrapper>.intro-name {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+.intro-page main .intro-wrapper>.tagline {
+  font-size: 1.375rem;
+  margin: 1.5rem 0;
+  font-weight: 300;
+}
+
+@media (max-width: 425px) {
+  .intro-page main .intro-wrapper>.tagline {
+    font-size: 1.25rem;
+  }
+}
+
+.intro-page main .browser-notes {
+  font-size: 0.75rem;
+}
+
+.intro-page main .browser-notes span {
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.125rem 0.5rem;
+}
+
+.about-page {
+  padding-top: 2rem;
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width: 425px) {
+  .about-page {
+    padding-top: 3rem;
+  }
+}
+
+.about-page h1 {
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+
+.about-page .content-grid {
+  -ms-flex: auto;
+  flex: auto;
+}
+
+.about-page .about-wrapper .about-content {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 425px) {
+  .about-page .about-wrapper .about-content {
+    font-size: 1rem;
+  }
+}
+
+.about-page .about-wrapper .about-content p {
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+.about-page .about-wrapper .about-content .text-emoji {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.portfolio-page {
+  padding-top: 2rem;
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width: 425px) {
+  .portfolio-page {
+    padding-top: 3rem;
+  }
+}
+
+.portfolio-page h1 {
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+
+.portfolio-page .content-grid {
+  -ms-flex: auto;
+  flex: auto;
+}
+
+.portfolio-page .portfolio-wrapper .portfolio-content {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 425px) {
+  .portfolio-page .portfolio-wrapper .portfolio-content {
+    font-size: 1rem;
+  }
+}
+
+.portfolio-page .portfolio-wrapper .portfolio-content p {
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+.portfolio-page .portfolio-wrapper .portfolio-content .text-emoji {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.social-icons {
+  ul {
+    padding-left: 0px;
+  }
+
+  ul li {
+    color: #ffffff;
+    display: inline-block;
+  }
+
+  padding: 0.25rem 0;
+  font-size: 3rem;
+}
+
+@media (max-width: 425px) {
+  .social-icons {
+    font-size: 2.5rem;
+  }
+}
+
+.social-icons a {
+  padding: 0 0.625rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.social-icons a.devto svg {
+  margin-bottom: -0.25rem;
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+@media (max-width: 425px) {
+  .social-icons a.devto svg {
+    margin-bottom: -0.225rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+.social-icons.animate-icons a {
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+}
+
+.social-icons.animate-icons a:hover,
+.social-icons.animate-icons a:focus,
+.social-icons.animate-icons a:active {
+  -webkit-animation-name: icon-wobble;
+  animation-name: icon-wobble;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes icon-wobble {
+  25% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  75% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes icon-wobble {
+  25% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  75% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}

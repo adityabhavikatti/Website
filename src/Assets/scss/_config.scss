@@ -1,0 +1,31 @@
+/*
+body
+*/
+body{
+    background-color: rgb(72, 85, 100);
+    color: white;
+}
+
+
+@mixin translateY($e) {
+    -webkit-transform: translateY($e);
+    -moz-transform: translateY($e);
+    transform: translateY($e);
+}
+
+@mixin transition($e) {
+    -webkit-transition: $e;
+    -moz-transition: $e;
+    transition: $e;
+}
+
+a{
+    text-decoration: none;
+    @include transition(.4s ease-in-out);
+    cursor: pointer;
+
+    &.hover{
+        color: slategrey;
+        @include transition(.4s ease-in-out);
+    }
+}
