@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ScrollTop from 'react-scrolltop-button';
 
 export default class Portfolio extends Component {
   render() {
@@ -38,6 +39,15 @@ export default class Portfolio extends Component {
             maecenas pharetra.
           </p>
         </div>
+        <ScrollTop
+          text= {<i class="fa fa-chevron-up"></i>}
+          distance={100}
+          breakpoint={768}
+          style={{ backgroundColor: "rgba(133, 139, 143, 0.8)", fontSize: "10px"  }}
+          className="scroll-your-role"
+          speed={550}
+          target={0}
+        />
       </div>
     );
   }

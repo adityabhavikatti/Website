@@ -8,10 +8,10 @@ export default class Intro extends Component {
             <h1 className="center">Welcome to my profile!</h1>
             <div className="social-icons animate-icons center">
             <ul>
-                <li><a href="https://github.com/adityabhavikatti/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/adityabhavikatti/" target="_blank"><i class="fa fa-linkedin"aria-hidden="true"></i></a></li>
-                <li><a href="https://www.facebook.com/aditya.bhavikatti/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="mailto:aditya.bhavikatti@gmail.com" target="_blank"><i class="fa fa-envelope"aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/adityabhavikatti/" target="blank"><i className="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/adityabhavikatti/" target="blank"><i className="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/aditya.bhavikatti/" target="blank"><i className="fa fa-facebook"></i></a></li>
+                <li><a href="mailto:aditya.bhavikatti@gmail.com" target="blank"><i className="fa fa-envelope"></i></a></li>
             </ul>
             </div>
             

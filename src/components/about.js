@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ScrollTop from 'react-scrolltop-button';
 
 export default class About extends Component {
   render() {
@@ -12,7 +13,16 @@ export default class About extends Component {
 Ut consequat semper viverra nam. Ac auctor augue mauris augue. Nunc mattis enim ut tellus elementum. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Elit eget gravida cum sociis natoque penatibus et magnis. Mauris commodo quis imperdiet massa tincidunt. Sed id semper risus in hendrerit gravida rutrum quisque non. Velit egestas dui id ornare arcu odio ut. Ut consequat semper viverra nam libero justo laoreet. Egestas erat imperdiet sed euismod nisi porta. Ut porttitor leo a diam sollicitudin. Bibendum ut tristique et egestas quis. Mauris sit amet massa vitae tortor condimentum. Aliquet enim tortor at auctor. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Fames ac turpis egestas maecenas pharetra.
             </p>
         </div>
+        <ScrollTop
+          text= {<i class="fa fa-chevron-up"></i>}
+          distance={100}
+          breakpoint={768}
+          style={{ backgroundColor: "rgba(133, 139, 143, 0.8)", fontSize: "10px" }}
+          className="scroll-your-role"
+          speed={550}
+          target={0}
+        />
       </div>
-    )
+      )
   }
 }

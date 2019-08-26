@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
-import Navbar from 'react-bootstrap/Navbar';
 
 
 export default class Header extends Component {
@@ -60,7 +59,7 @@ Aditya Bhavikatti
 }
 
 
-{/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
+/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -81,9 +80,9 @@ Aditya Bhavikatti
       </li>
     </ul>
   </div>
-</nav> */}
+</nav> */
 
-{/* <div className="logo">
+/* <div className="logo">
 Aditya Bhavikatti
 </div>
 <nav className="nav" id="navbar">
@@ -125,4 +124,4 @@ Aditya Bhavikatti
     </Link>
   </li>
 </ul>
-</nav> */}
+</nav> */
