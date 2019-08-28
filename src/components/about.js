@@ -17,7 +17,7 @@ Ut consequat semper viverra nam. Ac auctor augue mauris augue. Nunc mattis enim 
           text= {<i class="fa fa-chevron-up"></i>}
           distance={100}
           breakpoint={768}
-          style={{ backgroundColor: "rgba(133, 139, 143, 0.8)", fontSize: "10px" }}
+          style={{ backgroundColor: "transparent", fontSize: "10px", position: "fixed", bottom: "0", right: "0" }}
           className="scroll-your-role"
           speed={550}
           target={0}
