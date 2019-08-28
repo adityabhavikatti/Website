@@ -114,10 +114,19 @@ header {
       font-size: 19px;
       line-height: normal;
       color: white;
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .5s;
 
-      a:hover,
-      a:focus {
-          border-bottom-color: #ffffff;
+      &:hover,
+      &:focus {
+        background-size: 100% 2px;
+      }
+      &:active {
+        background-size: 100% 2px;
       }
     }
   }
