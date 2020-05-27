@@ -53,12 +53,16 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(189, 195, 199, 0.8);
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(39, 55, 71, 0.8), rgba(133, 139, 143, 0.8));
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(39, 55, 71, 0.8), rgba(133, 139, 143, 0.8));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #10232b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(44, 83, 100, 0.8), rgba(32, 58, 67, 0.8), #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  // background: rgba(189, 195, 199, 0.8);
+  // /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, rgba(39, 55, 71, 0.8), rgba(133, 139, 143, 0.8));
+  // /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, rgba(39, 55, 71, 0.8), rgba(133, 139, 143, 0.8));
+  // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   z-index: 999;
 }
 
@@ -70,12 +74,16 @@ header {
   position: relative;
   display: block;
   width: 100%;
-  background: #bdc3c7;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #979da1);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #979da1);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #bdc3c7;
+  // /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #2c3e50, #979da1);
+  // /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #2c3e50, #979da1);
+  // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   transition: background 0.5s ease;
   color: white;
   height: 70px;
@@ -228,108 +236,14 @@ header {
   padding: 0.125rem 0.5rem;
 }
 
-.about-page {
-  padding-top: 2rem;
-  min-height: 100vh;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-@media (max-width: 425px) {
-  .about-page {
-    padding-top: 3rem;
-  }
-}
-
-.about-page h1 {
-  padding: 1rem 0;
-  font-size: 3rem;
-}
-
-.about-page .content-grid {
-  -ms-flex: auto;
-  flex: auto;
-}
-
-.about-page .about-wrapper .about-content {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-}
-
-@media (max-width: 425px) {
-  .about-page .about-wrapper .about-content {
-    font-size: 1rem;
-  }
-}
-
-.about-page .about-wrapper .about-content p {
-  font-weight: 300;
-  padding: 0.5rem 0;
-}
-
-.about-page .about-wrapper .about-content .text-emoji {
-  padding: 2rem 0;
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-align: center;
-}
-
-.portfolio-page {
-  padding-top: 2rem;
-  min-height: 100vh;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-@media (max-width: 425px) {
-  .portfolio-page {
-    padding-top: 3rem;
-  }
-}
-
-.portfolio-page h1 {
-  padding: 1rem 0;
-  font-size: 3rem;
-}
-
-.portfolio-page .content-grid {
-  -ms-flex: auto;
-  flex: auto;
-}
-
-.portfolio-page .portfolio-wrapper .portfolio-content {
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-}
-
-@media (max-width: 425px) {
-  .portfolio-page .portfolio-wrapper .portfolio-content {
-    font-size: 1rem;
-  }
-}
-
-.portfolio-page .portfolio-wrapper .portfolio-content p {
-  font-weight: 300;
-  padding: 0.5rem 0;
-}
-
-.portfolio-page .portfolio-wrapper .portfolio-content .text-emoji {
-  padding: 2rem 0;
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-align: center;
+.skills{
+  margin-top: 10px;
+  margin-bottom: 10px;
+    h3:hover,
+    h3:focus,
+    h3:active {
+      color: #979da1;
+    }
 }
 
 .social-icons {
@@ -436,3 +350,115 @@ header {
     transform: translateY(0px);
   }
 }
+
+.about-page {
+  padding-top: 2rem;
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width: 425px) {
+  .about-page {
+    padding-top: 3rem;
+  }
+}
+
+.about-page h1 {
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+
+.left-half {
+  background-color: #2C5364;
+  position: absolute;
+  left: 0px;
+  width: 50%;
+}
+
+.about-page .content-grid {
+  -ms-flex: auto;
+  flex: auto;
+}
+
+.about-page .about-wrapper .about-content {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 425px) {
+  .about-page .about-wrapper .about-content {
+    font-size: 1rem;
+  }
+}
+
+.about-page .about-wrapper .about-content p {
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+.about-page .about-wrapper .about-content .text-emoji {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.portfolio-page {
+  padding-top: 2rem;
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width: 425px) {
+  .portfolio-page {
+    padding-top: 3rem;
+  }
+}
+
+.portfolio-page h1 {
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+
+.portfolio-page .content-grid {
+  -ms-flex: auto;
+  flex: auto;
+}
+
+.portfolio-page .portfolio-wrapper .portfolio-content {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 425px) {
+  .portfolio-page .portfolio-wrapper .portfolio-content {
+    font-size: 1rem;
+  }
+}
+
+.portfolio-page .portfolio-wrapper .portfolio-content p {
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+.portfolio-page .portfolio-wrapper .portfolio-content .text-emoji {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
